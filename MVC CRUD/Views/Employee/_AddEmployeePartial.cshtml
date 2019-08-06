@@ -16,36 +16,42 @@
                 @Html.LabelFor(m => m.Employee.Department, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.DropDownListFor(m => m.Employee.DepartmentId, (SelectList)ViewBag.DdlDepartment, "Select Department", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.DepartmentId, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.FirstName, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextBoxFor(m => m.Employee.FirstName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.FirstName, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.LastName, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextBoxFor(m => m.Employee.LastName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.LastName, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.Email, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextBoxFor(m => m.Employee.Email, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.Email, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.Phone, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextBoxFor(m => m.Employee.Phone, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.Phone, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.BirthDate, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextBoxFor(m => m.Employee.BirthDate, "{0:yyyy/MM/dd}", new { @class = "form-control", type = "date" })
+                    @Html.ValidationMessageFor(m => m.Employee.BirthDate, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
@@ -58,12 +64,14 @@
                         @Html.RadioButtonFor(m => m.Employee.Gender, (int)MVC_CRUD.Models.Utility.Gender.Female)
                         @Enum.GetName(typeof(MVC_CRUD.Models.Utility.Gender), 1)
                     </label>
+                    @Html.ValidationMessageFor(m => m.Employee.Gender, "", new { @class = "text-danger" })
                 </div>
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.Address, new { @class = "control-label col-sm-2" })
                 <div class="col-sm-10">
                     @Html.TextAreaFor(m => m.Employee.Address, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Employee.Address, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>

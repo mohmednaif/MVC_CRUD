@@ -25,6 +25,11 @@ namespace MVC_CRUD
             bundles.Add(new ScriptBundle("~/bundles/jquery.unobtrusive-ajax.min").Include(
                       "~/Scripts/jquery.unobtrusive-ajax.min.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery.validate.min").Include(
+                      "~/Scripts/jquery.validate.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jquery.validate.unobtrusive.min").Include(
+                      "~/Scripts/jquery.validate.unobtrusive.min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
