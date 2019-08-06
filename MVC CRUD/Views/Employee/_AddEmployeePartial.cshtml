@@ -64,8 +64,8 @@
                         @Html.RadioButtonFor(m => m.Employee.Gender, (int)MVC_CRUD.Models.Utility.Gender.Female)
                         @Enum.GetName(typeof(MVC_CRUD.Models.Utility.Gender), 1)
                     </label>
-                    @Html.ValidationMessageFor(m => m.Employee.Gender, "", new { @class = "text-danger" })
                 </div>
+                @Html.ValidationMessageFor(m => m.Employee.Gender, "", new { @class = "text-danger col-sm-10 col-sm-offset-2" })
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Employee.Address, new { @class = "control-label col-sm-2" })
