@@ -45,6 +45,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EFDataAccess\EFDataAccess.csproj">
       <Project>{a887b79f-8352-4726-91d6-3255c86ea5b3}</Project>
       <Name>EFDataAccess</Name>

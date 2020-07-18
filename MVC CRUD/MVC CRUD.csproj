@@ -156,6 +156,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DatabaseScript.sql" />
+    <Content Include="App_Data\MVC_CRUD.mdf" />
+    <Content Include="App_Data\MVC_CRUD_log.ldf">
+      <DependentUpon>MVC_CRUD.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -195,10 +200,9 @@
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\_EmployeeListPartial.cshtml" />
     <Content Include="Views\Employee\_AddEmployeePartial.cshtml" />
+    <Content Include="Views\Employee\_DataTablePartial.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -214,9 +218,9 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EFDataAccess\EFDataAccess.csproj">
-      <Project>{a887b79f-8352-4726-91d6-3255c86ea5b3}</Project>
-      <Name>EFDataAccess</Name>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{234a01ad-2dac-4c06-a09e-3868b75bf5e7}</Project>
+      <Name>Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{4a36850b-233f-4cc0-9e4b-e237b59b0255}</Project>

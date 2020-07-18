@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{4A36850B-233F-4CC0-9E4B-E237B59B0255}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{2C811535-7F37-4A93-B87F-F8FE492C6DB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC CRUD", "MVC CRUD\MVC CRUD.csproj", "{4FC3E2BC-A611-471D-800D-337193880B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4FC3E2BC-A611-471D-800D-337193880B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC3E2BC-A611-471D-800D-337193880B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FC3E2BC-A611-471D-800D-337193880B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{234A01AD-2DAC-4C06-A09E-3868B75BF5E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
